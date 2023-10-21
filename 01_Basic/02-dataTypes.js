@@ -8,7 +8,7 @@ let nbs = null; // object
 console.log("🚀 ~ file: 02-dataTypes.js:7 ~ nbs:", typeof nbs);
 
 /*
-//Premative DataTypes OR JavaScript DataTypes
+//JavaScript DataTypes
 
 1 = Number
 2 = Bigint
