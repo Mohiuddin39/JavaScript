@@ -32,3 +32,28 @@ console.log(typeof myFun); // object
  Question: JavaScript is Dynamically or Static Language?
  Ans: JavaScript is Dynamically type language.
  */
+
+/// ++++++++++++++++++++++++++++++++++++++++++++++++++
+// Discition about Memory
+/*
+//1 = Stack : all Primitive DataType come into Stack (it gives us Copy)
+//2 = Heap : all Non-Primitive DataType come into Heep (it give us Referance Or Origional)
+
+// Examples :
+let name = "Ghulam";
+let fullName = name;
+fullName = "MohiudDin Rizvi";
+console.log(name);
+console.log(fullName);
+
+let userOne = {
+  name: "Ali",
+  age: 18,
+};
+
+let userTwo = userOne;
+userTwo.name = "Mohiuddin";
+
+console.log(userOne.name);
+console.log(userTwo.name);
+*/
