@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(lang) {
+      const li = document.createElement("li");
+      li.innerHTML = `${lang}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("PHP");
+    addLanguage("Phyton");
+
+    //optimize way
+    function optiLanguage(lang) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(lang));
+      document.querySelector(".language").appendChild(li);
+    }
+    optiLanguage("TypeScript");
+
+    //Edit
+    const secLang = document.querySelector("li:nth-child(2)");
+    console.log(secLang);
+    //secLang.innerHTML = "Java";
+    const li = document.createElement("li");
+    li.textContent = "java";
+    secLang.replaceWith(li);
+
+    //edit
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.outerHTML = "<li>Ruby</li>";
+
+    //Remove
+    const thirdLang = document.querySelector("li:nth-child(3)");
+    thirdLang.remove();
+  </script>
+</html>
