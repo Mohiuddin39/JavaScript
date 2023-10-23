@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeout</title>
+  </head>
+  <body>
+    <h1>Ghulam MohiudDin</h1>
+    <button>Stop</button>
+  </body>
+  <script>
+    // setTimeout(function () {
+    //   console.log("Hello World");
+    // }, 2000);
+
+    const hello = function () {
+      alert("Hello World");
+    };
+    // setTimeout(hello, 2000);
+
+    const change = () => {
+      document.querySelector("h1").innerHTML = "World Best JS Course";
+      //   alert("called");
+      console.log("called");
+    };
+
+    const changeResult = setTimeout(change, 3000);
+
+    document.querySelector("button").addEventListener("click", () => {
+      clearTimeout(changeResult);
+      console.log("STOPPED");
+    });
+  </script>
+</html>
