@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    const div = document.createElement("div");
+    div.className = "nav";
+    div.id = Math.floor(Math.random() * 10 + 1);
+    // div.setAttribute("title", "Hello World");
+    div.style.backgroundColor = "green";
+    div.style.padding = "15px";
+    //div.innerHTML = "Hello I am Div";
+    const addText = document.createTextNode("I am MohiudDin");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+    console.log(div);
+  </script>
+</html>
