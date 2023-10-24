@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Colors</title>
+    <style>
+      .btn {
+        background-color: green;
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: wheat;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+      .btn2 {
+        background-color: red;
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+      #result {
+        width: 300px;
+        height: 150px;
+        margin: auto;
+        background-color: white;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        background-color: black;
+        padding: 10px;
+        color: white;
+      "
+    >
+      Unlimite Colors
+    </h1>
+    <button id="start" class="btn">Start</button>
+    <button id="stop" class="btn2">Stop</button>
+    <div id="result">
+      <h1 style="text-align: center">Color Hex Code</h1>
+      <h3 id="res" style="text-align: center"></h3>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
